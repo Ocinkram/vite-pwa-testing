@@ -6,15 +6,15 @@ import {
   precacheAndRoute,
 } from 'workbox-precaching'
 import { NavigationRoute, registerRoute } from 'workbox-routing'
-import { clientsClaim } from 'workbox-core'
+// import { clientsClaim } from 'workbox-core'
 
-self.addEventListener('message', (event) => {
-  if (event.data?.type === 'SKIP_WAITING') {
-    self.skipWaiting()
-  }
-})
+// self.addEventListener('message', (event) => {
+//   if (event.data?.type === 'SKIP_WAITING') {
+//     self.skipWaiting()
+//   }
+// })
 
-clientsClaim()
+// clientsClaim()
 
 declare let self: ServiceWorkerGlobalScope
 
